@@ -1,0 +1,213 @@
+/* NOTE APP STARTS HERE */
+/* Root Variables */
+:root {
+    --p-background: #9ceeab;
+    --s-background: #f8f8f8;
+    --p-color: rgb(236, 157, 127);
+    --s-color: rgb(190, 246, 56);
+    --card-color: rgb(182, 175, 248);
+    --heading-color: rgb(242, 50, 88);
+    --box-shadow: #111;
+    --border-color: #ccc;
+}
+
+.note-app {
+    height: auto;
+    width: 100%;
+    background-color: lightgray;
+    margin: 0rem auto;
+} 
+
+/* note head starts from here */
+ .head-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.note-head {
+    height: auto;
+    width: 32%;
+    background-color: var(--card-color);
+    border-radius: 0.2rem;
+    border: 2px solid transparent;
+}
+
+.filter-status-container, .filter-category-container {
+    height: auto;
+    width: 20%;
+    background-color: var(--s-background);
+    border-radius: 0.4rem;
+    padding: 1rem;
+    border-top: 4px solid var(--heading-color);
+    box-shadow: 0 0 5px var(--box-shadow);
+}
+.filter-category-container {
+    border-top: 4px solid var(--p-background);
+}
+.status-heading, .category-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#filterStatus {
+    height: 4rem;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+#filterCategory {
+    height: 4rem;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 1.5rem auto;
+    position: relative;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    width: 90%;
+    margin-bottom: 0.2rem;
+}
+
+#note, #content, #category {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.8rem;
+}
+#content {
+    resize: none;
+}
+.demo {
+    font-size: 0.9rem;
+    color: red;
+    position: absolute;
+    top: 100%;
+    left: 0.3rem;
+}
+
+.add-btn {
+    display: block;
+    font-size: 1.6rem;
+    background-color: #04AA6d;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    border: none;
+    margin: 2rem 2rem;
+    box-shadow: 0.2px 0.5px 2px #111;
+}
+
+.add-btn:active {
+    box-shadow: 0px 0px 1px #111;
+} 
+
+/* note body starts from here */
+.note-body {
+    height: auto;
+    width: 100%;
+    background-color: var(--s-background);
+    border-radius: 0.2rem;
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 22.5%);
+    grid-auto-rows: 18rem;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem 0rem;
+} 
+/* note card start from here */
+.note {
+    height: 18rem;
+    width: 100%;
+    background-color: var(--todo-background);
+    border-radius: 0.4rem;
+    border: 1px solid transparent;
+    list-style: none;
+    transition: box-shadow 0.4s ease;
+}
+.note-info {
+    height: 15rem;
+    width: 100%;
+    background-color: var(--p-background);
+    padding: 0.5rem;
+}
+.title {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.content {
+    display: block;
+    height: 7rem;
+    font-size: 1.2rem;
+}
+.category-container {
+    height: 2.2rem;
+}
+.category {
+    float: right;
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    background-color: var(--heading-color);
+    color: #fff;
+    border-radius: 0.2rem;
+}
+
+.icon-container {
+    height: 3rem;
+    background-color: var(--card-color);
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    padding: 0.5rem 1rem;
+}
+.delete, .edit {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #04AA6d;
+    padding: 0.4rem 0.6rem;
+    margin: 0 0.5rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 0.2px 1px 2px #fff;
+}
+.delete:active {
+    box-shadow: 0 0px 0px 0px #fff;
+}
+.edit:active {
+    box-shadow: 0 0px 0px 0px #fff;
+}
+.completed {
+    box-shadow: 0 0 10px green;
+}
+.not-completed {
+    box-shadow: 0 0 10px red;
+}
+.complete-btn {
+    font-size: 1rem;
+    color: #fff;
+    background-color: #04AA6d;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.2rem;
+    border: none;
+    box-shadow: 0 0.2px 1px 2px #fff;
+    margin: 0 1rem;
+    user-select: none;
+}
+.complete-btn:active {
+    box-shadow: 0 0px 0px 0px #fff;
+}  
