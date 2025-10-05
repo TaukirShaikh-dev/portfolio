@@ -2,9 +2,9 @@ import { StrictMode } from 'react'
 // import { createRoot } from 'react-dom/client'
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { HomeLayout } from "./HomeLayout";
-import { ContactLayout } from "./ContactLayout";
-import { ProjectLayout } from "./ProjectLayout";
+import { HomeLayout } from "./PortfolioLayout/HomeLayout.jsx";
+import { ContactLayout } from "./PortfolioLayout/ContactLayout.jsx";
+import { ProjectLayout } from "./PortfolioLayout/ProjectLayout.jsx";
 import {ShowProject} from './PorfolioComponent/Projectpage.jsx';
 import './index.css'
 import App from './App.jsx'

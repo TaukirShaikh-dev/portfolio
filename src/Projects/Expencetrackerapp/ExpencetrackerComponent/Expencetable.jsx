@@ -1,21 +1,11 @@
 import { useState, useEffect } from "react";
 import { useFilter } from '../hooks/useFilter';
-import { useSort } from "../hooks/useSort";
 import styles from '../Expencetracker.module.css';
 
 export function Expencetable({ ExpenceArray: [ExpenceArray, setExpenceArray], setFormData, setIsEditing, setUpdateId }) {
-    const [category, setCategory] = useState('');
-    const total = 0;
-    const [arr, setArr] = useState([1, 3, 2, 7, 6]);
     const [sortCallback, setSortCallback] = useState(() => () => {});
 
     console.log(sortCallback);
-
-    useEffect(() => {
-        console.log('state changed');
-    }, [arr]);
-
-    console.log(arr);
 
     //filter expences based on category
     // let filteredArray = ExpenceArray.filter((obj) => obj.category.includes(category));
@@ -80,7 +70,7 @@ export function Expencetable({ ExpenceArray: [ExpenceArray, setExpenceArray], se
                     </th>
                     <th>
                         <div className={styles.amountHeader}>
-                            <span>Amount</span>
+                            <span className="amount">Amount</span>
                             <div className={styles.arrowContainer}>
                                 <span className={styles.upArrow} onClick={handledeccending}>⬆️</span>
                                 <span className={styles.downArrow} onClick={handleAccending}>⬇️</span>

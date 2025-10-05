@@ -61,6 +61,7 @@ Thumbs.db
 *.pid
 
 # Visual Studio project files
+*.pid
 *.suo
 *.ntvs*
 *.njsproj

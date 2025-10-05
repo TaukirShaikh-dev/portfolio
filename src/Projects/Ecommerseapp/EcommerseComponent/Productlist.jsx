@@ -1,4 +1,3 @@
-import logo from '../../../assets/react.svg';
 import { useEffect } from 'react';
 import styles from '../Ecommersecart.module.css';
 
@@ -40,7 +39,7 @@ export function Productlist({ productArray, cartArray: [cartArray, setcartArray]
                  //fill each element data inside card structure
                 <li className={styles.pCard} key={obj.id}>
                     <div className={styles.cardHead}>
-                        <img src={logo} alt="logo" className={styles.pImage} />
+                        <img src={obj.image} alt="logo" className={styles.pImage} />
                     </div>
                     <div className={styles.cardBody}>
                         <p className={styles.pName}>Product: {obj.name}</p>

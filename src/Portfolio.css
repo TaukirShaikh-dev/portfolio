@@ -33,6 +33,7 @@ html {
     --card-background: #1f1f1f;
     --border-color: #333;
 }
+
 .container {
     height: auto;
     width: 100%;
@@ -145,7 +146,8 @@ html {
 
 /* Navbar Styles */
 #nav {
-    height: 6rem; /* Slightly increased height */
+    height: 6rem;
+    /* Slightly increased height */
     width: 100%;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -215,7 +217,8 @@ html {
 #toggle-button,
 #cross {
     font-size: 2.2rem;
-    display: none; /* Update this for mobile responsiveness later */
+    display: none;
+    /* Update this for mobile responsiveness later */
     color: var(--text-color);
     cursor: pointer;
 }
@@ -232,10 +235,12 @@ html {
     align-items: center;
     justify-content: center;
 }
+
 .user-image {
     height: 24rem;
     border-radius: 50%;
 }
+
 .icon {
     font-size: 4rem;
     background-color: #22c55e;
@@ -243,6 +248,7 @@ html {
     border-radius: 50%;
     margin: 1rem;
 }
+
 .name {
     font-size: 3rem;
     background-image: var(--gradient-alt);
@@ -334,6 +340,7 @@ html {
     font-weight: 600;
     color: var(--primary-color);
 }
+
 /* skill section ends from here */
 
 /* faq section starts here */
@@ -346,6 +353,7 @@ html {
     text-align: center;
     padding: 1rem 0;
 }
+
 #faq-section {
     width: 100%;
     background-color: var(--background-color);
@@ -359,13 +367,16 @@ html {
 }
 
 .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: clamp(1.8rem, 1.8%, 2rem);
     border-bottom: 1px solid var(--border-color);
     padding: 2rem 2rem;
 }
 
-.arrow-icon {
-    float: right;
+.faq-question>.question,
+.faq-question>.arrow-icon {
     font-size: clamp(1.8rem, 1.8%, 2rem);
 }
 
@@ -383,6 +394,7 @@ html {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
 /* faq section ends here */
 
 /* contact section starts here */
@@ -396,7 +408,7 @@ html {
     gap: 2rem;
 }
 
-.contact-section > .info {
+.contact-section>.info {
     text-align: center;
     background-color: var(--card-background);
     padding: 2rem;
@@ -444,11 +456,13 @@ html {
     margin-bottom: 1rem;
     text-align: center;
 }
+
 .wrapper {
     display: flex;
     flex-direction: column;
     width: 90%;
 }
+
 .wrapper label {
     font-size: 1.4rem;
     font-weight: 600;
@@ -521,6 +535,7 @@ html {
     color: var(--primary-color);
     font-style: italic;
 }
+
 /* contact section ends here */
 
 /* project section starts here */
@@ -534,7 +549,7 @@ html {
     gap: 2rem;
 }
 
-.project-container > .info {
+.project-container>.info {
     text-align: center;
     background-color: var(--card-background);
     padding: 2rem;
@@ -567,23 +582,27 @@ html {
     align-items: center;
     background-color: var(--card-background);
 }
-.card-container > .card {
+
+.card-container>.card {
     height: 40rem;
     width: 100%;
     background-color: var(--card-background);
     border-radius: 0.5rem;
     /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
     box-shadow: 0 2px 6px var(--text-color);
-     transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
-.card-container > .card:hover {
+
+.card-container>.card:hover {
     transform: translateY(-5px);
 }
+
 .project-image-container {
     height: 23rem;
     width: 100%;
 }
-.project-image-container > .p-image {
+
+.project-image-container>.p-image {
     height: 100%;
     width: 100%;
     border-top-left-radius: 0.5rem;
@@ -617,6 +636,7 @@ html {
     flex-wrap: wrap;
     margin-bottom: 1rem;
 }
+
 /* BADGE STYLING */
 .badge {
     display: inline-block;
@@ -669,6 +689,7 @@ html {
     border-radius: 1rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
 /* project section ends here */
 
 /* footer starts from here */
@@ -715,11 +736,12 @@ html {
 
 @media only screen and (max-width: 1023px) {
     .contact-details {
-       font-size: 1.2rem;
-     }
+        font-size: 1.2rem;
+    }
 }
 
 @media only screen and (max-width: 767px) {
+
     /* Responsive Navbar Styles */
     #nav {
         height: 6rem;
@@ -786,7 +808,7 @@ html {
 
     /* When menu is open */
     .nav-link.open {
-         transform: translateX(0%);
+        transform: translateX(0%);
     }
 
     /* Close (X) Icon */
@@ -805,14 +827,14 @@ html {
     }
 
     /* Navigation Links */
-    .nav-link > .link {
+    .nav-link>.link {
         width: 100%;
         list-style: none;
         border-bottom: 1px solid var(--border-color);
         margin-bottom: 1rem;
     }
 
-    .nav-link > .link .home-link {
+    .nav-link>.link .home-link {
         display: block;
         width: 100%;
         padding: 1.2rem 1rem;
@@ -824,7 +846,7 @@ html {
         transition: background-color 0.3s ease, color 0.3s ease;
     }
 
-    .nav-link > .link .home-link:hover {
+    .nav-link>.link .home-link:hover {
         background-color: var(--accent-color);
         color: var(--card-background);
     }
@@ -867,9 +889,11 @@ html {
         font-size: 2rem;
     }
 
-    .demo, .greet {
+    .demo,
+    .greet {
         font-size: 1.4rem;
     }
+
     /*Responsive contact ends from here */
 
     /*Responsive footer starts here */
@@ -895,7 +919,7 @@ html {
 
 
 @media only screen and (max-width: 480px) {
-
+    
     /*Responsive navbar starts from here */
     .nav-link {
         width: 100%;
@@ -904,14 +928,14 @@ html {
 
     /* When menu is open */
     .nav-link.open {
-         transform: translateX(0%);
+        transform: translateX(0%);
     }
 
     /*Responsive navbar ends from here */
 
     /*Responsive main content starts from here */
     .user-image {
-        height: clamp(18rem, 18%, 20rem);
+        height: clamp(16rem, 16%, 20rem);
     }
 
     .name {
@@ -926,13 +950,20 @@ html {
 
     /*Responsive main content ends from here */
 
-    /*Responsive faq section starts here */
+    /* Responsive faq section starts here */    
+
     .faq-question {
+        padding: 2rem 2rem;
+    }
+
+    .faq-question>.question,
+    .faq-question>.arrow-icon {
         font-size: clamp(1.2rem, 1.2%, 1.4rem);
     }
 
     .faq-answer {
-        font-size: clamp(1rem, 1%, 1.2rem);
+        font-size: clamp(0.8rem, 1%, 1.2rem);
+        padding: 0 2rem;
     }
 
     .visible {
@@ -940,5 +971,12 @@ html {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
     }
+
     /*Responsive faq section ends here */
+
+    /*Responsive project section starts here */
+    .project-container {
+        padding: 1rem;
+    }
+    /*Responsive project section ends here */
 }

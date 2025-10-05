@@ -1,4 +1,4 @@
-import { Project } from "./PorfolioComponent/Project";
+import { Project } from "../PorfolioComponent/Project";
 
 export function ProjectLayout() {
     return(

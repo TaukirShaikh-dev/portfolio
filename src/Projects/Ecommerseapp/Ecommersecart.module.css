@@ -348,31 +348,48 @@ html {
   padding: 0.6rem 1.2rem;
   background-color: var(--accent-color);
   color: var(--card-background);
-    border-radius: 0.3rem;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  border-radius: 0.3rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .okBtn:hover {
-    background-color: #218838; 
-}  
+  background-color: #218838;
+}
 
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
-    .productInfo {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .cartContainer {
+    min-height: 58.5rem;
+    width: 100%;
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    transform: translateX(100%);
+    transition: transform 0.6s linear;
+  }
+  .open {
+  transform: translateX(0%);
+}
 
-    .qurantity,
-    .price {
-        margin-top: 0.5rem;
-    }
+  .productInfo {
+    align-items: center;
+  }
 
-    .product {
-        margin-bottom: 0.5rem;
-    }
+  .qurantity,
+  .price {
+    margin-top: 0.5rem;
+  }
+
+  .product {
+    margin-bottom: 0.5rem;
+  }
 }

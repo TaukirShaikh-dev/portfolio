@@ -3,10 +3,10 @@ import { useState } from "react";
 export function Faq() {
     const [showIndex, setShowIndex] = useState(null);
 
-    const qa = [{ question: 'What Technologies do you use?', answer: 'I mainly use HTML, CSS, JavaScript and sometimes small libraries.' },
+    const qa = [{ question: 'What Technologies do you use?', answer: 'I mainly used React (Javascript, JSX) with HTML structure and CSS for styling. I also used React Router for navigation.' },
     { question: 'Are you available for freelance work?', answer: 'Yes! i am open to freelance and collaboration project.' },
-    { question: 'How did you build this site?', answer: 'Using HTML, CSS and JavaScript step by step.' },
-    { question: 'Where can i see your code?', answer: 'You can explore project in the project section.' }];
+    { question: 'How did you build this site?', answer: 'Using  React, Javascript, HTML, CSS step by step.' },
+    { question: 'Where can i see your code and Project?', answer: 'You can explore project in the project section.' }];
 
     function handleAnswer(clickdquestionIndex) {
        //show clicked question answer
@@ -23,7 +23,8 @@ export function Faq() {
                     qa.map((obj, index) => (
                           //fill each element data inside faq-item
                         <div className="faq-item" key={index}>
-                            <div className="faq-question" onClick={() => handleAnswer(index)}>{obj.question}
+                            <div className="faq-question" onClick={() => handleAnswer(index)}>
+                                <span className="question">{obj.question}</span>
                                 <span className="arrow-icon">{showIndex === index ? '-' : '+'}</span>
                             </div>
                             <p className={`faq-answer ${showIndex === index ? 'visible' : ''}`}>{obj.answer}</p>
