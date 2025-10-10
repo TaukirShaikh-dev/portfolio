@@ -192,7 +192,7 @@ html {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.home-link:hover {
+.active {
     color: var(--primary-color);
     transform: scale(1.1);
 }
@@ -745,7 +745,7 @@ html {
     /* Responsive Navbar Styles */
     #nav {
         height: 6rem;
-        padding: 0 2rem;
+        padding: 0 1rem;
         background-color: var(--background-color);
         color: var(--text-color);
         display: flex;

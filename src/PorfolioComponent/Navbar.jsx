@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 export function Navbar({dark, handleToggle}) {
@@ -15,9 +15,9 @@ export function Navbar({dark, handleToggle}) {
 
             <ul className={`nav-link ${open ? 'open' : ''}`}>
                 <li className="fas fa-times" id="cross" onClick={handleSidebar}></li>
-                <li className="link"><Link to="/" className="home-link">Home</Link></li>
-                <li className="link"><Link to="project" className="home-link">Project</Link></li>
-                <li className="link"><Link to="contact" className="home-link">Contact</Link></li>
+                <li className="link"><NavLink to="/" className={({isActive}) => isActive ? 'active home-link' : 'home-link'}>Home</NavLink></li>
+                <li className="link"><NavLink to="project" className={({isActive}) => isActive ? 'active home-link' : 'home-link'}>Project</NavLink></li>
+                <li className="link"><NavLink to="contact" className={({isActive}) => isActive ? 'active home-link' : 'home-link'}>Contact</NavLink></li>
             </ul>
 
             <div className="toggle-container">
