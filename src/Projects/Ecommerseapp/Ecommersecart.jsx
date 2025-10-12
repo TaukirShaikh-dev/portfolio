@@ -1,5 +1,5 @@
 // ECOMMERSE CART COMPONENET STARTS HERE
-import { Navbar } from './EcommerseComponent/navbar';
+import { Navbar } from './EcommerseComponent/Navbar';
 import { Productlist } from './ECommerseComponent/Productlist';
 import { Cart } from './EcommerseComponent/Cart';
 import { SuccessAlert } from './ECommerseComponent/Alert';
