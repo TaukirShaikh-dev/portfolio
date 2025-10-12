@@ -2,7 +2,7 @@
 import { Navbar } from './EcommerseComponent/Navbar';
 import { Productlist } from './EcommerseComponent/Productlist';
 import { Cart } from './EcommerseComponent/Cart';
-import { SuccessAlert } from './ECommerseComponent/Alert';
+import { SuccessAlert } from './EcommerseComponent/Alert';
 import styles from './Ecommersecart.module.css';
 import chips from '../../assets/img/chips.png';
 import pen from '../../assets/img/pen.png';
