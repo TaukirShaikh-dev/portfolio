@@ -1,6 +1,6 @@
 // ECOMMERSE CART COMPONENET STARTS HERE
 import { Navbar } from './EcommerseComponent/Navbar';
-import { Productlist } from './ECommerseComponent/Productlist';
+import { Productlist } from './EcommerseComponent/Productlist';
 import { Cart } from './EcommerseComponent/Cart';
 import { SuccessAlert } from './ECommerseComponent/Alert';
 import styles from './Ecommersecart.module.css';
@@ -11,6 +11,7 @@ import Tshirt from '../../assets/img/Tshirt.png';
 import shoes from '../../assets/img/shoes.png';
 import fan from '../../assets/img/fan.png';
 import { useState, useRef } from 'react';
+
 
 export function ECommerseCart() {
     const [cartArray, setcartArray] = useState([]);

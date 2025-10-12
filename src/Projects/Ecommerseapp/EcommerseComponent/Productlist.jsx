@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import styles from '../Ecommersecart.module.css';
 
 export function Productlist({ productArray, cartArray: [cartArray, setcartArray] }) {
