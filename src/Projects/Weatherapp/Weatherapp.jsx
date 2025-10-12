@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import styles from './WeatherApp.module.css';
+import styles from './Weatherapp.module.css';
 import { WeatherForm } from './WeatherappComponent/Weatherform';
 import { WeatherInfo } from './WeatherappComponent/Weatherinfo';
 import { WeatherError } from './WeatherappComponent/Weathererror';
