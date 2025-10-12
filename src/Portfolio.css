@@ -304,6 +304,7 @@ html {
     justify-items: center;
     align-items: center;
     padding: 4rem 2rem;
+    user-select: none;
 }
 
 .skill {

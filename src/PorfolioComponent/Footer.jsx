@@ -1,8 +1,13 @@
+import { Link } from "react-router-dom";
+
 export function Footer() {
     return (
         <footer className="footer">
-            <p className="link-container"><a href="#nav" className="back-link">Home</a> | <a href="#project-section" className="back-link">Project</a> | <a href="#faq-section" className="back-link">FAQ</a> | <a href="#contact-section" className="back-link">Contact</a></p>
-            <p className="social-link"><i className="social-icon fab fa-linkedin"></i> <i className="social-icon fab fa-github"></i></p>
+            <p className="link-container"><Link to="/" className="back-link">Home</Link> | <Link to="project" className="back-link">Project</Link> | <Link to="/" className="back-link">FAQ</Link> | <Link to="contact" className="back-link">Contact</Link></p>
+            <p className="social-link">
+                <a href="https://www.linkedin.com/in/taukir-shaikh-81029733b" target="_blank" rel="noopener noreferrer"><i className="social-icon fab fa-linkedin"></i></a>
+                <a href="https://github.com/TaukirShaikh-dev" target="_blank" rel="noopener noreferrer"><i className="social-icon fab fa-github"></i></a>
+            </p>
             <p className="copyright">&copy; 2025 Taukir Shaikh</p>
         </footer>
     );

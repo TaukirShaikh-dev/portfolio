@@ -1,4 +1,5 @@
 import user from '../assets/img/user8.png'
+import { Link } from 'react-router-dom';
 
 export function Main() {
     return (
@@ -8,7 +9,9 @@ export function Main() {
                 <p className="role">I am front-end developer with strong foundation in HTML, CSS and JavaScript. I enjoy building
                     clean, responsive user interfaces and turning design ideas into real, working component. I am continously
                     learning and love creating project that improve my skill and solve real problems.</p>
-                <p className="button-container"><button id="project-btn">View Project</button> <button id="contact-btn">Contact</button>
+                <p className="button-container">
+                    <Link to="project"><button id="project-btn">View Project</button></Link>
+                    <Link to="contact"><button id="contact-btn">Contact</button></Link>
                 </p>
         </main>
     );

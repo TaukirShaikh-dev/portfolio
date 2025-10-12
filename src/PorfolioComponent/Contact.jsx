@@ -33,8 +33,9 @@ export function Contact() {
               </form>
 
               <div className="contact-container">
-                 <p className="contact-details"><span className="contact-icon">📧</span><Link to="mailto: taukirshaikh415@gmail.com" id="mylink">taukirshaikh415@gmail.com</Link></p>
-                 <p className="contact-details"><span className="contact-icon">📧</span><Link to="https://www.linkedin.com/in/taukir-shaikh-81029733b" id="mylink">Linkin.com</Link></p>
+                 <p className="contact-details"><span className="contact-icon">📧</span><a href="mailto: taukirshaikh415@gmail.com" id="mylink">Send Email</a></p>
+                 <p className="contact-details"><span className="contact-icon">📧</span><a href="https://www.linkedin.com/in/taukir-shaikh-81029733b" target="_blank" 
+                  rel="noopener noreferrer" id="mylink">Visit Linkin Profile</a></p>
               </div>
            </div>
 
