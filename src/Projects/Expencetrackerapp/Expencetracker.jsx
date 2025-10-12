@@ -51,7 +51,6 @@ export function ExpenceTracker() {
         let newError = {};
         let isError = false;
 
-        console.log(formData);
         //for each element of form data check validation config
         Object.entries(formData).forEach(([key, value]) => {
             if (!validationConfig[key]) return;
@@ -60,7 +59,6 @@ export function ExpenceTracker() {
                 if (ruleobj.required && !value) {
                     newError[key] = ruleobj.message;
                     isError = true;
-                    console.log('inside');
                 }
 
                 if (ruleobj.positive && Number(value) < 0) {

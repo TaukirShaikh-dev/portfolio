@@ -20,7 +20,6 @@ export function NoteApp() {
 
     //on page load get localStorage current data
     useEffect(() => {
-        console.log('1 working');
         //get note key from localstorage
         const NoteArrayfromLocal = JSON.parse(localStorage.getItem('Note') || '[]');
         //change Notearray state value to localstorage note key value
@@ -29,8 +28,6 @@ export function NoteApp() {
     }, []);
 
     useEffect(() => {
-        console.log('2 working');
-
         if (NoteArray.length >= 0) {
             console.log('inside');
             //store noteArray in localstorage
@@ -130,7 +127,6 @@ export function NoteApp() {
         const filteredArray = NoteArray.filter((obj) => Number(obj.id) !== clickliId);
         //change noteArray state value to filteredArray
         setNoteArray(filteredArray);
-        console.log('deleted');
     }
 
     //edit function

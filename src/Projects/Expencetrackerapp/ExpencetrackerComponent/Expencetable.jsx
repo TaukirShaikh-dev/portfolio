@@ -5,8 +5,6 @@ import styles from '../Expencetracker.module.css';
 export function Expencetable({ ExpenceArray: [ExpenceArray, setExpenceArray], setFormData, setIsEditing, setUpdateId }) {
     const [sortCallback, setSortCallback] = useState(() => () => {});
 
-    console.log(sortCallback);
-
     //filter expences based on category
     // let filteredArray = ExpenceArray.filter((obj) => obj.category.includes(category));
     const [filteredArray, query, setQuery] = useFilter(ExpenceArray, (obj) => obj.category);

@@ -2,9 +2,9 @@ import { useEffect } from 'react';
 import styles from '../Ecommersecart.module.css';
 
 export function Productlist({ productArray, cartArray: [cartArray, setcartArray] }) {
-    useEffect(() => {
-        console.log(cartArray);
-    }, [cartArray]);
+    // useEffect(() => {
+    //     console.log(cartArray);
+    // }, [cartArray]);
 
     function handleAddtoCard(clickCardId) {
         //compare clickcardid with each element id of product array if match then return particular element
