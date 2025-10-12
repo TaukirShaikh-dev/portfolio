@@ -1,5 +1,5 @@
 import styles from '../Expencetracker.module.css';
-import { Input } from './input';
+import { Input } from './Input';
 import { Select } from './Select';
 
 export function Expenceform({ handleInsert, formData, handleChange, error, isEditing }) {
