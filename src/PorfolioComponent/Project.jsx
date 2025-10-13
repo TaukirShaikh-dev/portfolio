@@ -17,7 +17,7 @@ export function Project() {
         <article className="project-container">
             <div className="info">
                 <h2 className="project-heading">My Project</h2>
-                <p className="project-text">here are some Project I have buit using React, Javasctipt and CSS</p>
+                <p className="project-text">here are some Project I have buit using React, JavaScript and CSS</p>
             </div>
 
             <div className="card-container">
