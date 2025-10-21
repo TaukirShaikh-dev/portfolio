@@ -1,7 +1,4 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-
-export function Contact() {
+export default function Contact() {
     return (
         <article className="contact-section">
            <div className="info">

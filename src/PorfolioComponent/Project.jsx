@@ -1,11 +1,10 @@
-import image from '../assets/img/user8.png';
 import Noteapp from '../assets/img/Noteapp.png';
 import Weatherapp from '../assets/img/Weatherapp.png';
 import Ecommercecartapp from '../assets/img/Ecommercecartapp.png';
 import Expencetrackerapp from '../assets/img/Expencetrackerapp.png';
 import { Link } from 'react-router-dom';
 
-export function Project() {
+export default function Project() {
     const projectData = [
         { title: 'Note App', desc: 'Note-taking app with CRUD functionality and localStorage support built in React', Projectname: 'NoteApp', image: Noteapp },
         { title: 'Weather App', desc: 'Simple Weather app where user type city name to view live weather info', Projectname: 'WeatherApp', image: Weatherapp },

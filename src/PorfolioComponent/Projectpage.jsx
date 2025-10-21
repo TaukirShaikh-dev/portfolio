@@ -3,7 +3,6 @@ import { WeatherApp } from "../Projects/Weatherapp/Weatherapp";
 import { ECommerseCart } from "../Projects/Ecommerseapp/Ecommersecart";
 import { ExpenceTracker } from "../Projects/Expencetrackerapp/Expencetracker";
 import { useParams } from "react-router-dom";
-import { jsx } from "react/jsx-runtime";
 
 export function ShowProject() {
     const {Projectname} = useParams();
