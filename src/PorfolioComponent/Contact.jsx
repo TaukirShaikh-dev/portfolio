@@ -32,7 +32,7 @@ export default function Contact() {
               <div className="contact-container">
                  <p className="contact-details"><span className="contact-icon">📧</span><a href="mailto: taukirshaikh415@gmail.com" id="mylink">Send Email</a></p>
                  <p className="contact-details"><span className="contact-icon">📧</span><a href="https://www.linkedin.com/in/taukir-shaikh-81029733b" target="_blank" 
-                  rel="noopener noreferrer" id="mylink">Visit Linkin Profile</a></p>
+                  rel="noopener noreferrer" id="mylink">Visit Linkedin Profile</a></p>
               </div>
            </div>
 

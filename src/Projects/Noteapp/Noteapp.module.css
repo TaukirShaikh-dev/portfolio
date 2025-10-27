@@ -192,6 +192,8 @@ label {
     border-bottom-left-radius: 0.4rem;
     border-bottom-right-radius: 0.4rem;
     padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
 }
 
 .delete,
@@ -319,9 +321,8 @@ label {
     }
 
     .delete,
-    .edit,
-    .complete-btn {
-        font-size: 0.9rem;
+    .edit {
+        font-size: 1.2rem;
         padding: 0.3rem 0.5rem;
     }
 
@@ -339,6 +340,7 @@ label {
         flex-direction: column;
         gap: 2rem;
     }
+
     #filterStatus,
     #filterCategory {
         font-size: 1.2rem;
@@ -388,7 +390,7 @@ label {
     .delete,
     .edit,
     .complete-btn {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         padding: 0.2rem 0.4rem;
     }
 }
