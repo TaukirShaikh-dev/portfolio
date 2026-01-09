@@ -57,6 +57,7 @@ export function Cart({ refobj, cartArray: [cartArray, setcartArray], setIsSucces
     }
 
 
+
     return (
         <article className={styles.cartContainer} ref={refobj}>
             <h2 className={styles.cartHeading}>Cart <span className={styles.crossIcon} onClick={handleClose}>&times;</span></h2>
